@@ -1,5 +1,5 @@
 # -*- encoding: binary -*-
-ENV["VERSION"] or abort "VERSION= must be specified"
+ENV["VERSION"] || "4.8.3"
 manifest = File.readlines('.manifest').map! { |x| x.chomp! }
 require 'wrongdoc'
 extend Wrongdoc::Gemspec
